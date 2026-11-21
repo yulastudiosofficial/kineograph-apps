@@ -380,7 +380,9 @@
       <!-- GAME 2: SLOP MERGE -->
       <article class="app-card" aria-labelledby="merge-title">
         <div class="app-split">
-          <div class="merge-visual" aria-hidden="true">
+          <div class="merge-visual">
+            <img src="slop-merge-shot-2.jpg" alt="Slop Merge in play — a real board from the app, at Gaffer rank" style="width:100%;max-width:300px;border-radius:16px;border:1px solid rgba(246,239,224,.25);display:block;">
+
             <div class="merge-board">
               <div class="tile t2"><b>2</b></div>
               <div class="tile empty"></div>
@@ -432,7 +434,6 @@
         </div>
         <div style="display:flex;gap:10px;padding:0 22px 22px;">
           <img src="slop-merge-shot-1.jpg" alt="Slop Merge gameplay — a board mid-game at Key Grip rank" loading="lazy" style="flex:1;min-width:0;border-radius:14px;border:1px solid #ddd2b8;">
-          <img src="slop-merge-shot-2.jpg" alt="Slop Merge gameplay — a fuller board at Gaffer rank" loading="lazy" style="flex:1;min-width:0;border-radius:14px;border:1px solid #ddd2b8;">
           <img src="slop-merge-shot-3.jpg" alt="Slop Merge end card — That's a Wrap" loading="lazy" style="flex:1;min-width:0;border-radius:14px;border:1px solid #ddd2b8;">
         </div>
       </article>
@@ -473,10 +474,14 @@
     <div><strong>KINEOGRAPH</strong> &nbsp;·&nbsp; © 2026 Kineograph</div>
     <nav aria-label="Footer">
       <a href="https://kineograph.us/">kineograph.us</a>
-      <a href="https://kineograph.us/about-us/privacy-policy/">Privacy Policy</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
     </nav>
   </div>
 </footer>
 
+<button id="backToTop" aria-label="Back to the top of the page" style="position:fixed;right:16px;bottom:16px;z-index:60;width:48px;height:48px;border-radius:50%;border:1px solid #b98a2f;background:#D9A441;color:#0B1626;font-size:22px;font-weight:800;line-height:1;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.35);opacity:0;pointer-events:none;transition:opacity .25s ease;">↑</button>
+<script>
+(function(){var b=document.getElementById('backToTop');function f(){var s=window.scrollY>500;b.style.opacity=s?'1':'0';b.style.pointerEvents=s?'auto':'none';}window.addEventListener('scroll',f,{passive:true});f();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});})();
+</script>
 </body>
 </html>
