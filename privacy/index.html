@@ -55,6 +55,9 @@
   .applist li{border-top:1px solid var(--line);padding:20px 2px}
   .applist li:first-child{border-top:0}
   .app-eyebrow{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep)}
+  .app-row{display:flex;align-items:center;gap:12px;margin-top:6px}
+  .app-icon{width:40px;height:40px;border-radius:10px;box-shadow:0 4px 12px rgba(11,22,38,.18);flex:0 0 auto}
+  .app-row .appname{margin-top:0}
   .applist a.appname{font-family:"Cinzel",Georgia,serif;font-weight:800;color:var(--ink);font-size:clamp(24px,4vw,32px);text-decoration:none;letter-spacing:.03em;text-transform:uppercase;display:block;margin-top:6px}
   .applist a.appname:hover{color:var(--gold-deep);text-decoration:underline}
   .applist .appdesc{margin:8px 0 0;font-size:15px;color:var(--ink-2)}
@@ -98,7 +101,10 @@
       <ul class="applist">
         <li>
           <span class="app-eyebrow">The 2048-style film-reel merge game</span>
-          <a class="appname" href="slop-merge.html">Slop Merge</a>
+          <div class="app-row">
+            <img class="app-icon" src="../slop-merge-icon.png" alt="Slop Merge app icon">
+            <a class="appname" href="slop-merge.html">Slop Merge</a>
+          </div>
           <p class="appdesc">Last updated 28 November 2026.</p>
           <a class="read-btn" href="slop-merge.html">Read the policy →</a>
         </li>
